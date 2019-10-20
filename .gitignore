@@ -2,3 +2,6 @@
 /.idea/
 *.exe
 *.tmp
+*.iml
+*exe*
+.idea/*.iml
