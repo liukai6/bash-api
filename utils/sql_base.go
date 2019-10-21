@@ -23,7 +23,7 @@ func Init() {
 		dbport = "3306"
 	}
 	dsn := dbuser + ":" + dbpassword + "@tcp(" + dbhost + ":" + dbport + ")/" + dbname + "?charset=utf8"
-	
+
 	orm.RegisterDataBase("default", "mysql", dsn)
 
 	//注册生成相关的表
