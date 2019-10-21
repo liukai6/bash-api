@@ -1,7 +1,7 @@
 package routers
 
 import (
-	"bash-api/controllers"
+	"base-api/controllers"
 	"github.com/astaxie/beego"
 )
 
