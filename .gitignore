@@ -4,3 +4,4 @@
 *.tmp
 *.iml
 *exe*
+/conf/app.conf
