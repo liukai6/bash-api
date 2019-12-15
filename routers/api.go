@@ -1,11 +1,12 @@
 package routers
 
 import (
-	"base-api/controllers"
+	"bash-api/controllers"
 	"github.com/astaxie/beego"
 )
 
 func apiRouter()  {
-	beego.Router("/api",&controllers.LoginController{})
+	beego.Router("/api/adduser",&controllers.LoginController{},"post:AddUser")
+
 }
 

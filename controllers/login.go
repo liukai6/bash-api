@@ -10,7 +10,9 @@ type LoginController struct {
 }
 
 
-func (u *LoginController) Get() {
+//用来进行添加用户的操作
+func (u *LoginController) AddUser() {
+
 	beego.Info("部署")
 	u.Data["json"] = map[string]string{"uid": "123123","name":"你好"}
 	u.ServeJSON()
