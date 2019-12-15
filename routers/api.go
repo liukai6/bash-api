@@ -6,7 +6,7 @@ import (
 )
 
 func apiRouter()  {
-	beego.Router("/api/adduser",&controllers.LoginController{},"post:AddUser")
+	beego.Router("/api/adduser",&controllers.LoginController{},"get:AddUser")
 
 }
 
