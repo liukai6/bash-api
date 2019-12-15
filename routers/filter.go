@@ -7,6 +7,7 @@ import (
 )
 
 //进行过滤
+//此处需要注意的内容是引入文件的路径是否正确
 func init() {
 	var FinishRouter = func(ctx *context.Context) {
 		ctx.ResponseWriter.Header().Add("MinDoc-Version", "v1.00")

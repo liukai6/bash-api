@@ -6,16 +6,21 @@ import (
 
 // Operations about Users
 type LoginController struct {
-	beego.Controller
+	BaseController
 }
 
 
 //用来进行添加用户的操作
 func (u *LoginController) AddUser() {
-
-	beego.Info("部署")
+	u.SetSession("liukai","234234234234324")
+	sess := u.GetSession("liukai")
+	beego.Info(sess)
 	u.Data["json"] = map[string]string{"uid": "123123","name":"你好"}
 	u.ServeJSON()
 }
 
+func (u *LoginController) GetUser() {
+	sess := u.GetSession("liukai")
+	if
+}
 
